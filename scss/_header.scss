@@ -1,0 +1,69 @@
+
+body {
+    background-image: url(https://duki.com.ar/wp-content/uploads/2022/03/DUKI_YST_1920x1080.jpg);
+    background-position: center;
+    background-size: cover;
+    margin-left: 0.3rem;
+    margin-right: 0.3rem;
+
+    .navHeader {
+        background: linear-gradient(to right, rgb(32, 32, 148), rgb(57, 57, 85));
+      }
+      
+    .textNav {
+        color: $color-textos;
+    }
+      
+    .tituloPrincipal {
+        color: $color-titulos;
+        text-transform: uppercase;
+        top: 0;
+        bottom: 0;
+        right: 0;
+        left: 0;
+        margin: auto;
+        @include titulos;
+        text-shadow: 2px 7px rgb(231, 140, 3);
+      
+        &:hover {
+          transform: rotate(360deg);
+          transition: 2.5s;
+        }
+    }
+
+    .tituloContacto {
+      text-align: center;
+      color: rgb(223, 57, 181);
+      text-transform: uppercase;
+      margin-left: 4.375rem;
+      margin-bottom: 0px;
+      @include titulos;
+    }
+    
+    .tituloPrincipalM {
+      color: $color-titulos;
+      text-transform: uppercase;
+      top: 0;
+      bottom: 0;
+      right: 0;
+      left: 0;
+      margin: auto;
+      @include titulos;
+      text-shadow: 2px 7px rgb(231, 140, 3);
+      display: flex;
+      align-items: center;
+      justify-content: flex-start;
+    
+      &:hover {
+        transform: rotate(360deg);
+        transition: 2.5s;
+      }
+    }
+
+    .subInicio {
+      color: $color-sub;
+      margin-left: 4.6875rem;
+      text-shadow: 0.1rem 0.1rem rgb(190, 149, 66);
+    }
+
+  }

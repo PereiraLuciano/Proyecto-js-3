@@ -1,0 +1,35 @@
+/* ----------Pagina tour----------- */
+  
+.contenedorTour {
+    text-align: center;
+    text-transform: uppercase;
+    color: aqua;
+    background: linear-gradient(to right, rgb(99, 93, 93), black);
+
+    .titulosDelTour {
+        display: flex;
+        justify-content: space-around;
+        border-bottom: 0.06rem solid #ffffff;
+        color: blueviolet;
+    }
+      
+    .concierto {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+        grid-template-rows: 0.5fr 0.5fr 0.5fr 0.5fr 0.5fr 0.5fr 0.5fr 0.5fr 0.5fr 0.5fr;
+        border-bottom: 1px solid #ffffff;
+        margin-top: 5%;
+        margin-bottom: 5%;
+        text-transform: uppercase;
+    }
+  }
+  
+  .bottom {
+    background-color: rgb(207, 97, 97);
+    box-shadow: 0.31rem 0.4rem 0.31rem 0.07rem rgb(231, 140, 3);
+    cursor: pointer;
+    border-color: rgb(207, 97, 97);
+    border-radius: 0.31rem;
+    width: 9.4rem;
+  }
+  

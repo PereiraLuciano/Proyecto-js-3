@@ -1,0 +1,287 @@
+@font-face {
+  font-family: Titulos;
+  src: url("../Fuentes/adrip1.ttf");
+  font-weight: bold;
+}
+
+/* -----------------IMAGENES----------------------- */
+.imgInicio {
+  grid-area: imgI;
+  align-items: center;
+}
+
+.imgContacto {
+  width: 45rem;
+  height: 27rem;
+  margin: 0.625rem;
+}
+
+.imagenM {
+  grid-area: imagenM;
+  margin-bottom: 1rem;
+  margin-top: 0.5rem;
+}
+
+body {
+  background-image: url(https://duki.com.ar/wp-content/uploads/2022/03/DUKI_YST_1920x1080.jpg);
+  background-position: center;
+  background-size: cover;
+  margin-left: 0.3rem;
+  margin-right: 0.3rem;
+}
+
+body .navHeader {
+  background: linear-gradient(to right, rgb(32, 32, 148), rgb(57, 57, 85));
+}
+
+body .textNav {
+  color: bisque;
+}
+
+body .tituloPrincipal {
+  color: rgb(207, 97, 97);
+  text-transform: uppercase;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  margin: auto;
+  font-style: oblique;
+  font-family: Titulos;
+  font-size: 6.25rem;
+  text-shadow: 2px 7px rgb(231, 140, 3);
+}
+
+body .tituloPrincipal:hover {
+  transform: rotate(360deg);
+  transition: 2.5s;
+}
+
+body .tituloContacto {
+  text-align: center;
+  color: rgb(223, 57, 181);
+  text-transform: uppercase;
+  margin-left: 4.375rem;
+  margin-bottom: 0px;
+  font-style: oblique;
+  font-family: Titulos;
+  font-size: 6.25rem;
+}
+
+body .tituloPrincipalM {
+  color: rgb(207, 97, 97);
+  text-transform: uppercase;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  margin: auto;
+  font-style: oblique;
+  font-family: Titulos;
+  font-size: 6.25rem;
+  text-shadow: 2px 7px rgb(231, 140, 3);
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+}
+
+body .tituloPrincipalM:hover {
+  transform: rotate(360deg);
+  transition: 2.5s;
+}
+
+body .subInicio {
+  color: rgb(218, 35, 35);
+  margin-left: 4.6875rem;
+  text-shadow: 0.1rem 0.1rem rgb(190, 149, 66);
+}
+
+h1,
+h2 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.div2I {
+  grid-area: div2I;
+}
+
+.subtituloInicio2,
+.subtituloHistoria {
+  color: rgb(218, 35, 35);
+}
+
+.subtituloMusica {
+  grid-area: subtituloMusica;
+  color: rgb(218, 35, 35);
+  margin-left: 4.6875rem;
+  text-shadow: 0.1rem 0.1rem rgb(190, 149, 66);
+}
+
+.parrafoInicio {
+  color: bisque;
+  margin-left: 2rem;
+  grid-area: parrafoInicio;
+}
+
+.parrafoContacto {
+  background-color: bisque;
+  margin-top: 1rem;
+}
+
+.parrafoHistoria {
+  color: aqua;
+}
+
+.dukiVideo {
+  display: flex;
+  justify-content: center;
+  position: relative;
+}
+
+.formulario {
+  color: bisque;
+  border: 0.3rem solid black;
+  margin-right: 7rem;
+  margin-left: 1rem;
+  width: 36rem;
+  background: linear-gradient(to bottom, rgb(223, 57, 181), rgb(187, 0, 115), rgb(255, 0, 0));
+  border-radius: 0.7rem;
+}
+
+/* ------FOOTER------- */
+footer {
+  text-align: center;
+  grid-area: footer;
+  background: linear-gradient(to right, rgb(32, 32, 148), rgb(57, 57, 85));
+  height: 7rem;
+}
+
+footer .navFooter {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  margin-left: 12rem;
+  margin-right: 12rem;
+}
+
+footer .textoFooter {
+  color: yellow;
+  margin: 2rem;
+}
+
+/* ----------Pagina tour----------- */
+.contenedorTour {
+  text-align: center;
+  text-transform: uppercase;
+  color: aqua;
+  background: linear-gradient(to right, rgb(99, 93, 93), black);
+}
+
+.contenedorTour .titulosDelTour {
+  display: flex;
+  justify-content: space-around;
+  border-bottom: 0.06rem solid #ffffff;
+  color: blueviolet;
+}
+
+.contenedorTour .concierto {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-template-rows: 0.5fr 0.5fr 0.5fr 0.5fr 0.5fr 0.5fr 0.5fr 0.5fr 0.5fr 0.5fr;
+  border-bottom: 1px solid #ffffff;
+  margin-top: 5%;
+  margin-bottom: 5%;
+  text-transform: uppercase;
+}
+
+.bottom {
+  background-color: rgb(207, 97, 97);
+  box-shadow: 0.31rem 0.4rem 0.31rem 0.07rem rgb(231, 140, 3);
+  cursor: pointer;
+  border-color: rgb(207, 97, 97);
+  border-radius: 0.31rem;
+  width: 9.4rem;
+}
+
+/* -------GRID----------- */
+.gridPadreInicio {
+  display: grid;
+  grid-template-areas: "div2I parrafoInicio";
+}
+
+.gridPadreContacto {
+  display: grid;
+  grid-template-areas: "divContacto1 divContacto2";
+}
+
+.gridPadreMusica {
+  display: grid;
+  grid-template-areas: "imagenM tituloPrincipalMusica" "imagenM subtituloMusica";
+}
+
+/*-----Media----*/
+@media (min-width: 350px) and (max-width: 1024px) {
+  html {
+    font-size: 80%;
+  }
+
+  .gridPadreInicio {
+    display: grid;
+    grid-template-areas: "div2I" "parrafoInicio";
+  }
+
+  .gridPadreContacto {
+    display: grid;
+    grid-template-areas: "divContacto1" "divContacto2";
+  }
+}
+
+
+/*************** Pagina Tienda **************/
+.Productos{
+  width: 100px;
+  height: 100px;
+}
+
+.card {
+  display: flex;
+  align-items: center;
+  margin: 0.5rem;
+}
+
+.colorBCard {
+  background-color: black;
+  color: antiquewhite;
+  margin-top: 0.5rem;
+}
+
+.nombreProducto {
+  color: rgb(218, 35, 35);
+  text-shadow: 0.1rem 0.1rem rgb(190, 149, 66);
+}
+
+.Precio {
+  font-weight: bold;
+}
+
+.bottomCarrito {
+  width: 8rem;
+  height: 3rem;
+  margin-left: 45rem;
+  margin-top: 2rem;
+  margin-bottom: 1rem;
+}
+
+.colorBottom {
+  color: aqua;
+}
+
+.subH4 {
+  background: linear-gradient(to right, blue, violet);
+  color: rgb(226, 59, 59);
+  text-shadow: 0.1rem 0.1rem rgb(8, 8, 8);
+}
+
+/*# sourceMappingURL=estilo.css.map */
